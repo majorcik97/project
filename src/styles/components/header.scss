@@ -1,0 +1,45 @@
+@import '../lib/var.scss';
+
+.header {
+    padding: 25px 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #EFEFEF;
+
+    .logo {
+        margin-right: 55px;
+    }
+
+    &__menu {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+
+        span,
+        a {
+            padding: 10px 15px;
+            font-size: 16px;
+            font-family: 'semibold';
+            line-height: 24px;
+            color: #333;
+            cursor: pointer;
+
+            &:hover {
+                color: $purple;
+            }
+
+            &:active {
+                padding-bottom: 8px;
+                border-bottom: 2px solid $purple;
+            }
+        }
+    }
+
+    &__dropdown {
+        display: none;
+    }
+
+    .btn {
+        margin-left: auto;
+    }
+}

@@ -1,0 +1,55 @@
+@import './mixin.scss';
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: content-box;
+}
+
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        @include fb(percentage($i/12))
+    }
+}
+
+@media(max-width:1366px) {
+    @for $i from 1 through 12 {
+        .col-xl-#{$i} {
+            @include fb(percentage($i/12))
+        }
+    }
+}
+
+@media(max-width:1024) {
+    @for $i from 1 through 12 {
+        .col-lg-#{$i} {
+            @include fb(percentage($i/12))
+        }
+    }
+}
+
+@media(max-width:768px) {
+    @for $i from 1 through 12 {
+        .col-md-#{$i} {
+            @include fb(percentage($i/12))
+        }
+    }
+}
+
+@media(max-width:600px) {
+    @for $i from 1 through 12 {
+        .col-sm-#{$i} {
+            @include fb(percentage($i/12))
+        }
+    }
+}
+
+@media(max-width:375px) {
+    @for $i from 1 through 12 {
+        .col-xs-#{$i} {
+            @include fb(percentage($i/12))
+        }
+    }
+}

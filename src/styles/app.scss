@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import './lib/reset.scss';
+@import './lib/mixin.scss';
+@import './lib/fonts.scss';
+@import './lib/var.scss';
+@import './lib/helpers.scss';
+@import './lib/grid.scss';
+
+
+body {
+    font-family: 'medium';
+}
